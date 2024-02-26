@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 #header-div{
@@ -12,19 +13,25 @@
 .navBar{
     background-color: #758467;
     height: 10vh;
-    width: 100%; /* Ensure the nav bar takes the full width */
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navList{
     display: flex;
-    list-style-type: none;
-    justify-content: flex-end; /* Changed from flex-end to center */
     align-items: center;
+    align-self: center;
+
+    list-style-type: none;
+
+    margin-right: 15%;
 }
 
 .navOption{
     color: #DFE6DA;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-decoration: none;
-    margin: 0 20px; /* Add margin to create space between links */
+    font-weight: bold;
+    margin: 0 1vw;
 }
+
