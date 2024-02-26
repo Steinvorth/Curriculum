@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header-div{
+    background-color: #819171;
+    text-align: center;
+    height: 70vh;
+}
+
+.navBar{
+    background-color: #758467;
+    height: 10vh;
+    width: 100%; /* Ensure the nav bar takes the full width */
+}
+
+.navList{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end; /* Changed from flex-end to center */
+    align-items: center;
+}
+
+.navOption{
+    color: #DFE6DA;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 0 20px; /* Add margin to create space between links */
+}
