@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box; /* Ensures padding and borders are included in the total width and height */
 }
 
 /* Header */
 #header-div{
     background-color: #718467;
     text-align: center;
-    height: 70vh;
-
+    height: 70vh; /* You might want to adjust this if it causes layout issues */
 }
 
 .navBar{
@@ -25,7 +25,6 @@
     justify-content: flex-end;
     list-style-type: none;
     width: 70%;
-
 }
 
 .navOption{
@@ -40,36 +39,99 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60vh; /* Adjusted to not exceed the parent's height */
 }
 
 .text-content{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 55vh;
+    height: 100%;
     width: 70%;
 }
 
 /* Contact Div */
 #contact-info{
     background-color: #ECECEC;
-    height: 60vh;
+    height: 60vh; /* Ensure this does not exceed the height of the main container */
+}
+
+.basic-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 /* Projects Div */
 #projects-info{
     background-color: #9CAF88;
-    height: 60vh;
+    height: 60vh; /* Ensure this does not exceed the height of the main container */
 }
 
 /* Curriculum Div */
 #curriculum-div{
     background-color: #dfe6da;
-    height: 60vh;
+    height: 60vh; /* Ensure this does not exceed the height of the main container */
+}
+#curriculum-div .content{
+    display: flex;
+    justify-content: space-around; /* This will distribute space around the children */
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+
 }
 
-/* footer */
+/* Adjust the .curriculum-content class for individual items */
+.curriculum-content{
+    border: purple solid;
+    height: 60%; 
+    width: 25%; 
+    margin: 1%; 
+}
+
+/* Ensure that the outer container of .content has enough padding */
+.basic-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* Footer */
 #footer-div{
     background-color: #dfe6da;
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Universales */
+
+.content{
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: green 2px;
+}
+
+/* Todo lo de texto */
+.texto{
+    border: solid red;
+    height: 40vh;
+    width: 30vw;
+}
+
+/* Todo lo de imagenes o contenido */
+
+.img{
+    border: solid blue;
+    height: 40vh;
+    width: 30vw;
 }
