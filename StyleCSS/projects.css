@@ -4,3 +4,10 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box; /* Ensures padding and borders are included in the total width and height */
 }
+
+/* Header */
+#header-div{
+    background-color: #718467;
+    text-align: center;
+    height: 100vh; /* You might want to adjust this if it causes layout issues */
+}
