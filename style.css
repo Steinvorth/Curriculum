@@ -4,14 +4,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Header */
 #header-div{
-    background-color: #819171;
+    background-color: #718467;
     text-align: center;
     height: 70vh;
 }
 
 .navBar{
-    background-color: #758467;
     height: 10vh;
     display: flex;
     justify-content: flex-end;
@@ -35,3 +35,24 @@
     margin: 0 1vw;
 }
 
+/* Contact Div */
+
+#contact-info{
+    background-color: #ECECEC;
+    height: 60vh;
+}
+
+#proyects-info{
+    background-color: #9CAF88;
+    height: 60vh;
+}
+
+#curriculum-div{
+    background-color: #dfe6da;
+    height: 60vh;
+}
+
+#footer-div{
+    background-color: #dfe6da;
+    height: 10vh;
+}
