@@ -5,13 +5,13 @@
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    box-sizing: border-box; /* Ensures padding and borders are included in the total width and height */
+    box-sizing: border-box; 
 }
 
 /* Header */
 #header-div{
     background-color: #718467;
-    height: 70vh; /* You might want to adjust this if it causes layout issues */
+    height: 60vh; 
 }
 
 .navBar{
@@ -19,6 +19,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #718467; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .navList{
@@ -41,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh; /* Adjusted to not exceed the parent's height */
+    height: 60vh;
 }
 
 .text-content{
@@ -55,7 +63,7 @@
 /* Contact Div */
 #contact-info{
     background-color: #ECECEC;
-    height: 60vh; /* Ensure this does not exceed the height of the main container */
+    height: 60vh; 
 }
 
 .basic-info{
@@ -68,30 +76,28 @@
 /* Projects Div */
 #projects-info{
     background-color: #9CAF88;
-    height: 60vh; /* Ensure this does not exceed the height of the main container */
+    height: 60vh; 
 }
 
 /* Curriculum Div */
 #curriculum-div{
     background-color: #dfe6da;
-    height: 60vh; /* Ensure this does not exceed the height of the main container */
+    height: 60vh; 
 }
 #curriculum-div .content{
     display: flex;
-    justify-content: space-around; /* This will distribute space around the children */
+    justify-content: space-around; 
     align-items: center;
-    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    flex-wrap: wrap;
 
 }
 
-/* Adjust the .curriculum-content class for individual items */
 .curriculum-content{
     height: 60%; 
     width: 25%; 
     margin: 1%; 
 }
 
-/* Ensure that the outer container of .content has enough padding */
 .basic-info{
     display: flex;
     justify-content: center;
@@ -136,5 +142,4 @@
 .img{
     height: 40vh;
     width: 30vw;
-    border: solid blue;
 }
