@@ -143,3 +143,14 @@
     height: 40vh;
     width: 30vw;
 }
+
+#btn-action{
+    background-color: #9CAF88;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
