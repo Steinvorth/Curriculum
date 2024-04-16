@@ -29,12 +29,12 @@ frm.addEventListener("submit", async event => {
 
     try{
         await post(newContacto);
-        alert("Se ha enviado el mensaje correctamente");
+        $('#successModal').modal('show');
         Limpiar();
     }
     catch(error){
         console.error(error);
-        alert("Error al enviar el mensaje");
+        $('#errorModal').modal('show');
     }     
     
 });
