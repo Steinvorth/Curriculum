@@ -15,7 +15,7 @@
 }
 
 .navBar{
-    height: 10vh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,11 +45,12 @@
     margin: 0 1vw;
 }
 
-.header-content{
+.content-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 100%;
 }
 
 .text-content{
@@ -66,13 +67,6 @@
     height: 60vh; 
 }
 
-.basic-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
 /* Projects Div */
 #projects-info{
     background-color: #9CAF88;
@@ -84,13 +78,7 @@
     background-color: #dfe6da;
     height: 60vh; 
 }
-#curriculum-div .content{
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    flex-wrap: wrap;
 
-}
 
 .curriculum-content{
     height: 60%; 
@@ -98,13 +86,27 @@
     margin: 1%; 
 }
 
+/* Form Div */
+
+#form-div{
+    background-color: #ECECEC;
+    height: 60vh; 
+}
+
 .basic-info{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    flex-direction: column;    
 }
 
+.basic-info2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    width: 69%;
+}
 
 /* Footer */
 #footer-div{
@@ -126,13 +128,16 @@
     justify-content: center;
 
     gap: 5%;
+}
 
-    border: green 2px;
+.content-curriculum{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 /* Todo lo de texto */
 .texto{
-    border: solid red;
     height: 40vh;
     width: 30vw;
 }
@@ -153,4 +158,27 @@
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#title{
+    width:70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-end;
+    height: 10%;
+}
+
+.form-label{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 1%;
+    width: 400px;
+}
+
+/* Add padding to target sections to account for sticky nav */
+#header-div,
+#contact-info,
+#projects-info,
+#curriculum-div {
+    padding-top: 70px; /* Adjust the value as needed to match the height of your sticky nav */
 }
