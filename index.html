@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     </head>
     <body>
@@ -16,27 +24,37 @@
           <div class="navBar">
             
             <ul class="navList">
-              <li><a class="navOption" href="index.html">Home</a></li>
-              <li><a class="navOption" href="Navigation/about.html">About</a></li>
-              <li><a class="navOption" href="Navigation/contact.html">Contact</a></li>
-              <li><a class="navOption" href="Navigation/projects.html">Projects</a></li>
-              <li><a class="navOption" href="Navigation/curriculum.html">Curriculum</a></li>
+              <li><a class="navOption" href="#header-content">Sobre Mi</a></li>
+              <li><a class="navOption" href="#contact-info">Contacto</a></li>
+              <li><a class="navOption" href="#projects-info">Projectos</a></li>
+              <li><a class="navOption" href="#curriculum-div">Curriculum</a></li>
             </ul>
 
           </div>
           
           <div class="header-content">
             
-            <div class="text-content">
+            <div class="basic-info">
               
-              <div class="texto">
-                Algun Texto importante
+              <div class="content">
+                <div class="card mb-3" style="width: 55rem; height: 25rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Hola! Soy Emiliano.</h5>
+                    <p class="card-text">Graduado de la Saint Gregory School, actualmente estoy cursando la carrera de Ingeniería Informática en la ULACIT, donde busco expandir mis conocimientos y habilidades en el campo de la tecnología. Fuera del ámbito académico, disfruto del fútbol y siempre busco oportunidades para mejorar y crecer personalmente. Como persona de fe, encuentro motivación en mi creencia cristiana y en el constante aprendizaje que ofrece esta carrera. Mis metas incluyen continuar aprendiendo, mejorando y capacitándome para garantizar un crecimiento constante en mi carrera y vida personal.</p>
+                    
+                    <br>
+                    
+                    <p class="card-text">Te interesa saber de mis experiencias?</p>
+                    <a href="#curriculum-div" class="btn btn-primary">Ir a curriculum</a>
+                  </div>
+                </div>
+                
+                <div class="img">
+                  img aqui
+                </div>
               </div>
               
-              <div class="img">
-                img aqui
-              </div>
-              
+  
             </div>
 
           </div>
@@ -48,15 +66,47 @@
           
           <!-- Contacrt Div -->
           <div id="contact-info">
-            sobre mi
+            Contacto
             
             <div class="basic-info">
               
               <div class="content">
-                <p>Introduccion Basica a quien soy yo</p>
+                <div class="card" style="width: 35rem; height: 24rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Quieres contactarme?</h5>
+                    <p class="card-text">
+                      Tengo experiencia en HTML, CSS, JavaScript, Java, Python y C#. He desarrollado una variedad de proyectos que 
+                      demuestran mis habilidades en programación. Desde sitios web dinámicos hasta aplicaciones robustas orientadas a uso empresarial, 
+                      estoy preparado para ofrecer soluciones creativas y profesionales a tus necesidades. Estoy encantado de ofrecer mis servicios y contribuir al éxito de tu proyecto.
+                    </p>
+                  </div>
+                </div>
                 
-                <div class="img">
-                  img aqui
+                <div id="carouselExampleIndicators" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
               
@@ -71,13 +121,21 @@
             <div class="basic-info">
 
               <div class="content">
-                <p>Proyecto Destacado de Github. Los demas van a estar dentro del html de la pagina dedicadad de proyectos:
 
-                  <a href="https://github.com/Steinvorth?tab=repositories">github</a>
-                </p>
+                <div class="card" style="width: 35rem; height: 24rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">GitHub</h5>
+                    <p class="card-text">GitHub ha sido una herramienta fundamental en mi aprendizaje de control de código fuente. Aquí destaca un proyecto especial: mi versión del famoso "Etch a Sketch", que ha sido esencial para poner en práctica las habilidades adquiridas. Explora mi código en GitHub y descubre cómo esta creación ha contribuido a mi crecimiento como desarrollador.</p>
+                    <a href="https://github.com/Steinvorth?tab=repositories" class="btn btn-primary">Pagina GitHub</a>
+                    <a href="https://steinvorth.github.io/Etch-a-Sketch/" class="btn btn-primary">Proyecto</a>
+                  </div>
+                </div>
 
                 <div class="img">
-                  img aqui
+                  <div class="card text-bg-dark w-100 h-100">
+                    <img src="img/githubStar.png"  id="github" class="card-img h-100" alt="...">
+
+                  </div>
                 </div>
               </div>
               
@@ -95,15 +153,39 @@
               <div class="content">
 
                 <div class="curriculum-content">
-                  container 1
+
+                    <div class="card w-100 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+
                 </div>   
 
                 <div class="curriculum-content">
-                  container 1
+                  
+                  <div class="card w-100 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
                 </div> 
 
                 <div class="curriculum-content">
-                  container 1
+                  
+                    <div class="card w-100 h-100">
+                      <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                  </div>
+
                 </div>
 
               </div>
@@ -118,9 +200,10 @@
         </div>
 
         <div id="footer-div">
-          Footer, credits, etc
+          2024 Emiliano Steinovorth
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       </div>
     </body>
 </html>

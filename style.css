@@ -1,14 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
     box-sizing: border-box; /* Ensures padding and borders are included in the total width and height */
 }
 
 /* Header */
 #header-div{
     background-color: #718467;
-    text-align: center;
     height: 70vh; /* You might want to adjust this if it causes layout issues */
 }
 
@@ -84,7 +86,6 @@
 
 /* Adjust the .curriculum-content class for individual items */
 .curriculum-content{
-    border: purple solid;
     height: 60%; 
     width: 25%; 
     margin: 1%; 
@@ -118,6 +119,8 @@
     align-items: center;
     justify-content: center;
 
+    gap: 5%;
+
     border: green 2px;
 }
 
@@ -131,7 +134,7 @@
 /* Todo lo de imagenes o contenido */
 
 .img{
-    border: solid blue;
     height: 40vh;
     width: 30vw;
+    border: solid blue;
 }
