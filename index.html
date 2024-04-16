@@ -273,22 +273,22 @@
 
                   </div>
 
-                  <form action="#" method="post">
+                  <form id="frm">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <label for="nombreContacto" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombreContacto" name="name" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Correo Electrónico:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                        <label for="emailContacto" class="form-label">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="emailContacto" name="email" required>
                     </div>
                     <div class="mb-3">
-                      <label for="email" class="form-label">Tema:</label>
-                      <input type="message" class="form-control" id="tema" name="tema" required>
-                  </div>
+                        <label for="temaContacto" class="form-label">Tema:</label>
+                        <input type="text" class="form-control" id="temaContacto" name="tema" required>
+                    </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Mensaje:</label>
-                        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                        <label for="msgContacto" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="msgContacto" name="msgContacto" rows="3" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary" id="btn-action">Enviar</button>
                 </form>
@@ -306,9 +306,18 @@
 
         <div id="footer-div">
           2024 Emiliano Steinvorth
-        </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        </div>        
       </div>
+
+      <!-- Boostrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      <!-- firebase -->
+      <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+
+      <!-- Scripts -->
+      <script src="Firebase/form-db.js"></script>
     </body>
 </html>
